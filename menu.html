@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Steamsbury</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <img src="./assets/navbarlogo.png" alt="Steamsbury Logo" class="logo">
+            
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link active">Menu</a>
+                <a href="#dashboard" class="nav-link">Dashboard</a>
+                <a href="#wallet" class="nav-link">Wallet</a>
+                <a href="#events" class="nav-link">Events</a>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="search-box">
+                    <span class="material-icons">search</span>
+                    <input type="text" placeholder="Search Menu..." class="search-input">
+                </div>
+                <div class="profile-icon">
+                    <span class="material-icons">person</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="menu-hero">
+        <div class="hero-content-wrapper">
+            <div class="hero-text">
+                <span class="hero-label">Our Menu</span>
+                <h1 class="hero-title">Crafted for comfort,<br>brewed for you.</h1>
+                <p class="hero-description">
+                    Explore our artisanal coffee blends, freshly baked pastries, and refreshing cold brews. Item of the day: 
+                    <span class="highlight">Salted Caramel Macchiato</span>.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Order Now</button>
+                    <button class="btn btn-secondary">View Nutritional Info</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./MenuAssets/ceylon-tea-collection.jpg" alt="Coffee">
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="filter-tabs">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab active" data-filter="all">
+                    <span class="material-icons">restaurant_menu</span>
+                    All
+                </button>
+                <button class="tab" data-filter="hot-coffee">
+                    <span class="material-icons">local_fire_department</span>
+                    Hot Coffee
+                </button>
+                <button class="tab" data-filter="cold-brews">
+                    <span class="material-icons">ac_unit</span>
+                    Cold Brews
+                </button>
+                <button class="tab" data-filter="teas">
+                    <span class="material-icons">emoji_food_beverage</span>
+                    Teas
+                </button>
+                <button class="tab" data-filter="bakery">
+                    <span class="material-icons">bakery_dining</span>
+                    Bakery
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hot Coffee Section -->
+    <section class="menu-section" data-category="hot-coffee">
+        <div class="container">
+            <div class="section-header">
+                <span class="material-icons">local_fire_department</span>
+                <h2>Hot Coffee Classics</h2>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Classic Espresso -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="./MenuAssets/Classic Espresso.png" alt="Classic Espresso">
+                        <span class="badge">V</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Classic Espresso</h3>
+                            <span class="price">Rs 800</span>
+                        </div>
+                        <p class="description">Rich, intense, and full-bodied single shot made from our signature dark roast</p>
+                        <span class="calories">5kcal</span>
+                    </div>
+                </div>
+
+                <!-- Cappuccino -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="./MenuAssets/Cappuccino.png" alt="Cappuccino">
+                        <span class="badge">GF</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Cappuccino</h3>
+                            <span class="price">Rs 800</span>
+                        </div>
+                        <p class="description">Espresso combined with equal parts steamed milk and milk foam, dusted</p>
+                        <span class="calories">120kcal</span>
+                    </div>
+                </div>
+
+                <!-- Caffè Latte -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="./MenuAssets/cafelatte.jpg" alt="Caffè Latte">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Caffè Latte</h3>
+                            <span class="price">Rs 800</span>
+                        </div>
+                        <p class="description">A shot of espresso in steamed milk with a light layer of foam.</p>
+                        <span class="calories">190kcal</span>
+                    </div>
+                </div>
+
+                <!-- Americano -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="./MenuAssets/Americano.jpg" alt="Americano">
+                        <span class="badge">V</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Americano</h3>
+                            <span class="price">Rs 800</span>
+                        </div>
+                        <p class="description">Espresso shots topped with hot water creating a light layer of crema</p>
+                        <span class="calories">5kcal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cold Brews Section -->
+    <section class="menu-section" data-category="cold-brews">
+        <div class="container">
+            <div class="section-header">
+                <span class="material-icons">ac_unit</span>
+                <h2>Cold Brews & Refreshers</h2>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Iced Caramel Macchiato -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="./MenuAssets/Iced Caramel Macchiato.jpg" alt="Iced Caramel Macchiato">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Iced Caramel Macchiato</h3>
+                            <span class="price">Rs 800</span>
+                        </div>
+                        <p class="description">Espresso combined with vanilla-flavored syrup, milk and caramel drizzle over ice.</p>
+                        <span class="calories">250kcal</span>
+                    </div>
+                </div>
+
+                <!-- Nitro Cold Brew -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="./MenuAssets/Nitro Cold Brew.jpg" alt="Nitro Cold Brew">
+                        <span class="badge">V</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Nitro Brew</h3>
+                            <span class="price">Rs 800</span>
+                        </div>
+                        <p class="description">Our signature Cold Brew infused with nitrogen for a creamy, sweet flavor.</p>
+                        <span class="calories">5kcal</span>
+                    </div>
+                </div>
+
+                <!-- Iced Matcha Latte -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="./MenuAssets/Iced Matcha Latte.jpg" alt="Iced Matcha Latte">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Iced Matcha Latte</h3>
+                            <span class="price">Rs 800</span>
+                        </div>
+                        <p class="description">Smooth and creamy matcha sweetened just right and served</p>
+                        <span class="calories">200kcal</span>
+                    </div>
+                </div>
+
+                <!-- Iced Matcha Latte 2 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="./MenuAssets/Cold Brew Green Tea.jpg" alt="Iced Matcha Latte">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Cold Brew Green Tea</h3>
+                            <span class="price">Rs 800</span>
+                        </div>
+                        <p class="description">Smooth and creamy matcha sweetened just right and served</p>
+                        <span class="calories">200kcal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bakery Section -->
+    <section class="menu-section" data-category="bakery">
+        <div class="container">
+            <div class="section-header">
+                <span class="material-icons">bakery_dining</span>
+                <h2>Fresh Bakery</h2>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Butter Croissant -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="./MenuAssets/Butter Croissant.jpg" alt="Butter Croissant">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Croissant</h3>
+                            <span class="price">Rs 800</span>
+                        </div>
+                        <p class="description">Flaky, golden-brown pastry made with real butter. Baked fresh daily.</p>
+                        <span class="calories">260kcal</span>
+                    </div>
+                </div>
+
+                <!-- Chocolate Muffin -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="./MenuAssets/Chocolate-Muffins-16.webp" alt="Chocolate Muffin">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Chocolate Muffin</h3>
+                            <span class="price">Rs 800</span>
+                        </div>
+                        <p class="description">Rich chocolate muffin loaded with chocolate chips and a tender crumb.</p>
+                        <span class="calories">380kcal</span>
+                    </div>
+                </div>
+
+                <!-- Chocolate Muffin 2 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="./MenuAssets/Garlic bread.jpg" alt="Chocolate Muffin">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Garlic bread</h3>
+                            <span class="price">Rs 800</span>
+                        </div>
+                        <p class="description">Rich chocolate muffin loaded with chocolate chips and a tender crumb.</p>
+                        <span class="calories">380kcal</span>
+                    </div>
+                </div>
+
+                <!-- Everything Bagel -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="./MenuAssets/Everything-Bagel-Breakfast-Sandwich-6-scaled.jpg" alt="Everything Bagel">
+                        <span class="badge">V</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Everything Bagel</h3>
+                            <span class="price">Rs 800</span>
+                        </div>
+                        <p class="description">Toasted bagel topped with sesame, poppy seeds, onion, and garlic.</p>
+                        <span class="calories">280kcal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <img src="./assets/navbarlogo.png" alt="Steamsbury" class="footer-logo">
+                    <p>Brewing moments of joy, one cup at a time. Visit us for the finest beans and pastries.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="#">Contact</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>
